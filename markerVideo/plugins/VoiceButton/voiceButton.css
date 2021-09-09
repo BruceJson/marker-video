@@ -1,0 +1,121 @@
+.em_voice_btn_content {
+    position: relative;
+    line-height: 1;
+}
+
+.em_voice_btn_content .voice_btn {
+    cursor: pointer;
+}
+
+.em_voice_btn_content .voice_btn i {
+    color: #fff;
+}
+
+/* 声音设置弹框 */
+.em_voice_setting_box {
+    position: absolute;
+    width: 40px;
+    height: 130px;
+    padding-bottom: 10px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-95%);
+    -webkit-transform: translateX(-50%) translateY(-95%);
+    -moz-transform: translateX(-50%) translateY(-95%);
+    -ms-transform: translateX(-50%) translateY(-95%);
+    -o-transform: translateX(-50%) translateY(-95%);
+    visibility: hidden;
+    opacity: 0;
+    transition: all ease-in-out .3s;
+    -webkit-transition: all ease-in-out .3s;
+    -moz-transition: all ease-in-out .3s;
+    -ms-transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
+}
+
+.em_voice_btn_content .voice_btn:hover+.em_voice_setting_box,
+.em_voice_setting_box:hover,
+.em_voice_setting_box.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(-100%);
+    -webkit-transform: translateX(-50%) translateY(-100%);
+    -moz-transform: translateX(-50%) translateY(-100%);
+    -ms-transform: translateX(-50%) translateY(-100%);
+    -o-transform: translateX(-50%) translateY(-100%);
+}
+
+
+.em_voice_setting_box .voice_setting_box_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    display: flex;
+    padding: 15px 0;
+    justify-content: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.em_voice_setting_progress_bar {
+    position: relative;
+    height: 100%;
+    width: 3px;
+    background-color: rgba(255, 255, 255, .7);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    transition: all linear 0.2s;
+    -webkit-transition: all linear 0.2s;
+    -moz-transition: all linear 0.2s;
+    -ms-transition: all linear 0.2s;
+    -o-transition: all linear 0.2s;
+    cursor: pointer;
+}
+
+.em_voice_setting_progress_bar:hover {
+    width: 8px;
+}
+
+.em_voice_setting_progress_bar .voice_setting_progress_inner {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60%;
+    background-color: #FF6503;
+    border-radius: 4px;
+}
+
+.em_voice_setting_progress_bar .voice_setting_progress_inner .voice_thumb {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: rgb(255, 101, 3);
+    border: 4px solid rgb(252, 223, 205);
+    border-radius: 100%;
+    left: 50%;
+    top: 0;
+    cursor: pointer;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+}
+
+.em_voice_setting_progress_bar .voice_setting_progress_inner .voice_thumb:hover {
+    box-shadow: 0 0 10px 0 rgb(255, 101, 3);
+}

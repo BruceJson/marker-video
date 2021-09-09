@@ -1,0 +1,11 @@
+.em_full_screen_btn_content {
+    line-height: 1;
+}
+
+.em_full_screen_btn_content .full_screen_btn {
+    cursor: pointer;
+}
+
+.em_full_screen_btn_content .full_screen_btn i {
+    color: #fff;
+}

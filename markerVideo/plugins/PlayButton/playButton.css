@@ -1,0 +1,21 @@
+/* 播放按钮 */
+.em_play_btn_content {}
+
+.em_play_btn_content .play_btn {
+    cursor: pointer;
+    line-height: 1;
+}
+
+.em_play_btn_content .play_btn.pause {
+    display: none;
+}
+
+.em_play_btn_content .play_btn i {
+    font-size: 40px;
+    color: #fff;
+    transition: all linear .3s;
+}
+
+.em_play_btn_content .play_btn:hover i {
+    color: #FF6503;
+}

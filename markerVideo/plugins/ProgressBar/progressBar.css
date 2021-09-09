@@ -1,0 +1,121 @@
+.em_progress_box {
+    position: relative;
+    height: 10px;
+}
+
+.em_progress_box .progress_bar {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all linear .2s;
+}
+
+.em_progress_box:hover .progress_bar {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.em_progress_box .progress_bar .progress_bar_inner {
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background-color: #FF6503;
+    /* transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s; */
+}
+
+.em_progress_box .progress_bar .progress_bar_inner .progress_bar_thumb {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 101, 3);
+    border: 4px solid rgb(252, 223, 205);
+    border-radius: 100%;
+    right: 0px;
+    top: 50%;
+    cursor: pointer;
+    transition: all linear 0.3s;
+    z-index: 30;
+    transform: translateX(50%) translateY(-50%) translateZ(0);
+    -webkit-transform: translateX(50%) translateY(-50%) translateZ(0);
+    -moz-transform: translateX(50%) translateY(-50%) translateZ(0);
+    -ms-transform: translateX(50%) translateY(-50%) translateZ(0);
+    -o-transform: translateX(50%) translateY(-50%) translateZ(0);
+}
+
+.em_progress_box .progress_bar .progress_bar_inner .progress_bar_thumb:hover {
+    box-shadow: 0 0 10px 0 rgb(255, 101, 3);
+}
+
+/* mark */
+.em_progress_box .progress_bar .progress_mark_list {}
+
+.em_progress_box .progress_bar .progress_mark_list .progress_mark {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 100%;
+    /* left: 40%; */
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    cursor: pointer;
+    transition: all linear .2s;
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    -o-transition: all linear .2s;
+}
+
+.em_progress_box .progress_bar .progress_mark_list .progress_mark:hover {
+    box-shadow: 0 0 10px 0 rgb(255, 101, 3);
+    transform-origin: 50% 50%;
+}
+
+.em_progress_box .progress_bar .progress_mark_list .progress_mark .mark_tip_box {
+    position: absolute;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, .5);
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.3);
+    top: -3px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%);
+    -webkit-transform: translateX(-50%) translateY(-100%);
+    -moz-transform: translateX(-50%) translateY(-100%);
+    -ms-transform: translateX(-50%) translateY(-100%);
+    -o-transform: translateX(-50%) translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.em_progress_box .progress_bar .progress_mark_list .progress_mark:hover .mark_tip_box {
+    opacity: 1;
+    visibility: visible;
+}
+
+.em_progress_box .progress_bar .progress_mark_list .progress_mark .mark_tip_box p {
+    margin: 0;
+    font-size: 12px;
+    color: #fff;
+}

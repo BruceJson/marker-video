@@ -1,0 +1,75 @@
+<!--
+ * @Description: 
+ * @Version: 1.0
+ * @Autor: 朱峰
+ * @Date: 2021-08-06 17:32:07
+ * @LastEditors: 朱峰
+ * @LastEditTime: 2021-08-10 15:01:24
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./markerVideo/font/iconfont/iconfont.css">
+    <link rel="stylesheet" href="./markerVideo/markerVideo.css">
+    <link rel="stylesheet" href="./markerVideo/plugins/MkVideo/mkVideo.css">
+    <link rel="stylesheet" href="./markerVideo/plugins/ProgressBar/progressBar.css">
+    <link rel="stylesheet" href="./markerVideo/plugins/PlayButton/playButton.css">
+    <link rel="stylesheet" href="./markerVideo/plugins/VoiceButton/voiceButton.css">
+    <link rel="stylesheet" href="./markerVideo/plugins/SpeedButton/speedButton.css">
+    <link rel="stylesheet" href="./markerVideo/plugins/FullScreenButton/fullScreenButton.css">
+    <link rel="stylesheet" href="./markerVideo/plugins/Time/time.css">
+
+    <style>
+        #markVideo {
+            position: relative;
+            width: 800px;
+            height: 450px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id='markVideo'> </div>
+</body>
+<script src="./markerVideo/lib/jquery.min.js"></script>
+<script src='./markerVideo/config/config.js'></script>
+<script src='./markerVideo/lib/Event.js'></script>
+<script src='./markerVideo/plugins/MkVideo/mkVideo.js'></script>
+<script src='./markerVideo/plugins/ProgressBar/progressBar.js'></script>
+<script src='./markerVideo/plugins/PlayButton/playButton.js'></script>
+<script src='./markerVideo/plugins/VoiceButton/voiceButton.js'></script>
+<script src='./markerVideo/plugins/SpeedButton/speedButton.js'></script>
+<script src='./markerVideo/markerVideo.js'></script>
+
+<script>
+    var markerList = ['4.2321', '8.2321', '12.1233', '18.3432'];
+
+    var markerVideo = new MarkerVideo({
+        el: $('#markVideo')[0],
+        videoUrl: 'http://10.10.81.44:80/video//lkvideo001/2021-08-05/6d3b6909-eeab-4e89-b2db-b7d8fd4c0c8e_1628149274.mp4',
+        markerList: [{
+            time: '4.2321',
+            label: 'aabbcc11'
+        }, {
+            time: '8.2321',
+            label: 'aabbcc22'
+        }, {
+            time: '12.1233',
+            label: 'aabbcc33'
+        }, {
+            time: '18.3432',
+            label: 'aabbcc44'
+        }],
+        width: '100%',
+        height: '100%'
+    });
+</script>
+
+</html>

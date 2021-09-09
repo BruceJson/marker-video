@@ -1,0 +1,86 @@
+.em_speed_btn_content {
+    position: relative;
+    line-height: 1;
+}
+
+.em_speed_btn_content .speed_btn {
+    cursor: pointer;
+}
+
+.em_speed_btn_content .speed_btn p {
+    color: #fff;
+    font-size: 14px;
+}
+
+/* 播放速度设置弹框 */
+.em_speed_setting_box {
+    position: absolute;
+    padding-bottom: 10px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-95%);
+    -webkit-transform: translateX(-50%) translateY(-95%);
+    -moz-transform: translateX(-50%) translateY(-95%);
+    -ms-transform: translateX(-50%) translateY(-95%);
+    -o-transform: translateX(-50%) translateY(-95%);
+    visibility: hidden;
+    opacity: 0;
+    transition: all ease-in-out .3s;
+    -webkit-transition: all ease-in-out .3s;
+    -moz-transition: all ease-in-out .3s;
+    -ms-transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
+}
+
+.em_speed_btn_content .speed_btn:hover+.em_speed_setting_box,
+.em_speed_setting_box:hover,
+.em_speed_setting_box.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(-100%);
+    -webkit-transform: translateX(-50%) translateY(-100%);
+    -moz-transform: translateX(-50%) translateY(-100%);
+    -ms-transform: translateX(-50%) translateY(-100%);
+    -o-transform: translateX(-50%) translateY(-100%);
+}
+
+.em_speed_setting_box .speed_setting_box_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.em_speed_setting_box .speed_setting_box_inner .speed_setting_item {
+    color: #fff;
+    font-size: 14px;
+    margin: 0;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: all linear .2s;
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    -o-transition: all linear .2s;
+}
+
+.em_speed_setting_box .speed_setting_box_inner .speed_setting_item:nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+.em_speed_setting_box .speed_setting_box_inner .speed_setting_item.active,
+.em_speed_setting_box .speed_setting_box_inner .speed_setting_item:hover {
+    color: #FF6503;
+}
